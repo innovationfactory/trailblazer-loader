@@ -63,7 +63,7 @@ module Trailblazer
   private
 
     def load_files(files)
-      files.each { |file| yield file }
+      files.sort.each { |file| yield file }
     end
   end
 end
